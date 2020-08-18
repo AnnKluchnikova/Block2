@@ -30,7 +30,7 @@ void input(int c_str)
 		  {
 	         printf ("Enter a char value (0 to end): "); // Введите цифру "0", чтобы закончить ввод текущий строки
 	         std::cin >> input;
-	         //scanf("%s",input); // Нет объяснения, почему с этой функцией программа не работает!!!
+	         //scanf("%s",&input); // Нет объяснения, почему с этой функцией программа не работает!!!
 	         str = (char*) realloc (str, count + sizeof(char)+2);
 	         str[count]=input;
 	         count++;
